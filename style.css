@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+/*  imagem de fundo */
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #0F0F0F;
+    background-image: url(/assets/images/background-image.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    height: 100vh;
+
+    z-index: -2;}
+
+#navBar {
+    margin-bottom: 80px;
+}
+
+#search {
+    margin-left: 200px;
+    margin-top: 20px;
+    position: absolute;
+
+}
+
+
+/* Menu hamburguer */
+.navbar {
+    width: 0px;
+}
+
+nav {
+    width: 0px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 0px;
+}
+
+.navbar .menu-items {
+    display: flex;
+}
+
+.navbar .nav-container li {
+    list-style: none;
+    font-family: 'inter'
+}
+
+.navbar .nav-container a {
+    text-decoration: none;
+    color: #FFFF;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+}
+
+.navbar .nav-container a:hover {
+    font-weight: bolder;
+}
+
+.nav-container {
+    display: block;
+
+    height: 10px;
+}
+
+.nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 65px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff;
+    margin-left: 50px;
+}
+
+.nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+    padding-top: 200px;
+
+    height: 100vh;
+    width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left:100px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+}
+
+.navbar .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.nav-container input[type="checkbox"]:checked~.menu-items {
+    transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+    transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+    transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+    transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.logo {
+    display: none;
+}
+
+/* "HboMax" logo até "Entrar" */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+
+
+
+
+header img {
+    text-align: center;
+    margin-top: 10px;
+
+
+}
+
+   
+#entrar {
+    color: white;
+    align-items: center;
+    font-family: 'inter';
+    font-weight: 700;
+    size: 54px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#entrar h1 {
+    margin: 0;
+}
+
+/* form */
+section {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+input {
+    font-size: 15px;
+    padding-left: 10px;
+
+
+
+}
+
+input::placeholder {
+    color: white;
+    font-family: 'inter';
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.text-intermediario {
+    color: white;
+    display: flex;
+
+    justify-content: center;
+    font-family: 'inter';
+    font-weight: 400;
+    size: 29px;
+}
+
+form {
+    align-items: flex-start;
+    flex-direction: column;
+    border: none;
+    padding: 10px;
+    font-family: 'inter';
+}
+
+form input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    border-radius: 25px;
+    height: 30px;
+    background-color: #7F7F7F;
+    font-family: 'inter';
+
+}
+
+form label {
+    margin: 10px;
+    font-family: 'inter';
+    font-size: 20px;
+    font-style: normal;
+}
+
+
+#formHBO form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    color: white;
+
+
+}
+
+#buttonEnter {
+    width: 150px;
+    height: 40px;
+    margin-top: 35px;
+    background: #8C77E0;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    font-family: 'inter';
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+
+}
+
+#buttonEnter:hover {
+    transition: 2s;
+    background: linear-gradient(-90deg, #e66fc4 0%, #A18CD1 100%);
+
+}
+
+
+#prov {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'inter';
+    font-weight: 400;
+    size: 29px;
+}
+
+#prov button {
+    width: 300px;
+    height: 40px;
+    margin-top: 35px;
+    background: #8C77E0;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    font-family: 'inter';
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+}
+
+
+#prov button:hover {
+    transition: 2s;
+    background: linear-gradient(-90deg, #e66fc4 0%, #A18CD1 100%);
+
+}
+
+#footerText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 100px;
+}
