@@ -1,34 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
 
-body{
+body {
     margin: 0px;
     padding: 0px;
 }
 
 /*  imagem de fundo */
-html
-{
+html {
     background-image: url(/assets/images/background-image.svg);
     background-repeat: no-repeat;
     background-size: 100vh;
-   
-    background-color: #0F0F0F;
-   
-    overflow: auto;   
-    
-  
-   
+    background-color: rgba(0, 0, 0, 1);
 
     background-size: cover;
-
-
-
-   
 }
 
-
+/* Barra de navegação */
 #navBar {
     margin-bottom: 80px;
+}
+
+#navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 36%;
+    font-family: 'inter';
+    font-weight: bold;
+
+
+}
+
+#navBar a:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+
 }
 
 #search {
@@ -41,34 +49,36 @@ html
 
 /* Menu Hamburguer */
 .submit-lente {
-    position:relative;
-    top: -25px; 
-    right:0;
+    position: relative;
+    top: -25px;
+    right: 0;
     margin-left: 5px;
-    z-index:10;
-    border:none;
-    background:transparent;
-    outline:none;
+    z-index: 10;
+    border: none;
+    background: transparent;
+    outline: none;
     color: white;
 
-  }
-  .submit-lente:hover {
+}
+
+.submit-lente:hover {
     transform: scale(1.2);
-  }
-  
-  .submit-line {
+}
+
+.submit-line {
     position: relative;
     width: 200px;
-    
-    
-  }
-  
-  .submit-line input {
+
+
+}
+
+.submit-line input {
     width: 100%;
     color: white;
     font-family: 'inter';
     padding-left: 40px;
-  }
+}
+
 #menu__toggle {
     opacity: 0;
 }
@@ -158,33 +168,6 @@ html
     transform: scale(1.2);
 }
 
-/* "HboMax" logo até "Entrar" */
-
-
-
-
-
-
-#navBar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    margin-top: 0px;
-    margin-left: 36%;
-    font-family: 'inter';
-    font-weight: bold;
-
-
-}
-
-#navBar a:hover {
-    transform: scale(1.1);
-    transition: 0.2s;
-
-}
-
-
 
 #entrar {
     display: flex;
@@ -193,10 +176,12 @@ html
     align-items: center;
     font-family: 'inter';
     font-weight: 700;
-    size: 54px;
+
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+
 
 #entrar h1 {
     margin: 0;
@@ -264,7 +249,7 @@ form input {
 
 }
 
-  
+
 
 
 form label {
@@ -283,6 +268,8 @@ form label {
 
 
 }
+
+/* Buttons */
 
 #buttonEnter {
     width: 150px;
@@ -357,29 +344,36 @@ form label {
 1900px // Extra Large screen */
 
 @media screen and (max-width: 1001px) {
-   html {background-position: center;} 
-    
-  
+    html {
+        background-position: center;
     }
-    
-  
+
+
+}
+
+
 
 @media screen and (max-width: 768px) {
-    html {background-position: center;
-        
-        
-        
-  }
-  @media screen and (max-width: 375px){
-    html {background-position: center;}
-    #navBar {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        text-align: center;
-        margin-top: 0px;
-        margin-left: 0;
+    html {
+        background-position: center;
+
+
+
     }
+
+    @media screen and (max-width: 375px) {
+        html {
+            background-position: center;
+        }
+
+        #navBar {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+            margin-top: 0px;
+            margin-left: 0;
+        }
 
         form input {
             display: flex;
@@ -390,15 +384,19 @@ form label {
             height: 30px;
             background-color: #7F7F7F;
             font-family: 'inter';
-       
+
         }
-    
-    
+
+
     }
-   
-  }
-  @media screen and (max-width: 415px){
-    html {background-position: center;}
+
+}
+
+@media screen and (max-width: 415px) {
+    html {
+        background-position: center;
+    }
+
     #navBar {
         display: flex;
         flex-direction: column;
@@ -409,21 +407,18 @@ form label {
         ;
     }
 
-        form input {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width:300px;
-            border-radius: 25px;
-            height: 30px;
-            background-color: rgba(19, 16, 16, 0.8);
-            font-family: 'inter';
-            border: none;
-        
-        }
-        
-    
-  }
-    
-   
-  
+    form input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        border-radius: 25px;
+        height: 30px;
+        background-color: rgba(19, 16, 16, 0.8);
+        font-family: 'inter';
+        border: none;
+
+    }
+
+
+}
